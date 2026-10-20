@@ -1,48 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">M Sreeram Reddy — Data Analytics</title>
-  <desc id="desc">Animated dark navy and teal banner with an animated analytics line and softly pulsing chart points.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">M Sreeram Reddy — Data Analytics, BI, Applied ML</title>
+  <desc id="desc">Vibrant animated violet, cyan, pink, and orange banner with glowing analytics paths, data particles and waveform patterns.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="58%" stop-color="#102b3b"/>
-      <stop offset="100%" stop-color="#0f766e"/>
+      <stop offset="0%" stop-color="#0b1020">
+        <animate attributeName="stop-color" values="#0b1020;#21103e;#102d46;#0b1020" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#282060">
+        <animate attributeName="stop-color" values="#282060;#0e7490;#9d174d;#282060" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#06b6d4;#f97316;#7c3aed" dur="12s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5eead4" stop-opacity=".15"/>
-      <stop offset="100%" stop-color="#99f6e4" stop-opacity="1"/>
+    <linearGradient id="chartStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".45" stop-color="#e879f9"/>
+      <stop offset="1" stop-color="#fbbf24"/>
     </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#cbd5e1" stroke-opacity=".08" stroke-width="1"/>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity=".075" stroke-width="1"/>
     </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
-  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
-  <circle cx="1030" cy="95" r="125" fill="#2dd4bf" opacity=".06">
-    <animate attributeName="opacity" values=".03;.12;.03" dur="5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1070" cy="250" r="150" fill="#38bdf8" opacity=".06">
-    <animate attributeName="opacity" values=".02;.09;.02" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <g fill="none" stroke="url(#line)" stroke-width="3">
-    <path d="M700 230 L770 196 L830 211 L890 150 L950 166 L1020 97 L1080 120 L1160 55" stroke-dasharray="700" stroke-dashoffset="700">
-      <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3.4s" fill="freeze"/>
-    </path>
-    <path d="M700 250 L770 235 L830 245 L890 218 L950 226 L1020 192 L1080 206 L1160 170" opacity=".35" stroke-dasharray="600" stroke-dashoffset="600">
-      <animate attributeName="stroke-dashoffset" from="600" to="0" dur="4s" fill="freeze"/>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="24" fill="url(#grid)"/>
+  <circle cx="930" cy="100" r="105" fill="#22d3ee" opacity=".08"><animate attributeName="r" values="85;130;85" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="1090" cy="280" r="125" fill="#f472b6" opacity=".10"><animate attributeName="r" values="110;150;110" dur="8s" repeatCount="indefinite"/></circle>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".10">
+    <path d="M650 45 C820 125 850 10 1030 95 S1130 170 1200 125"/>
+    <path d="M630 275 C810 190 930 320 1200 205"/>
+    <path d="M660 310 C850 240 1010 360 1200 270"/>
+  </g>
+  <g opacity=".95" stroke="url(#chartStroke)" fill="none" stroke-width="4" filter="url(#glow)">
+    <path d="M680 245 L735 207 L785 220 L838 158 L893 175 L947 112 L1001 130 L1060 72 L1113 93 L1170 39" stroke-dasharray="800" stroke-dashoffset="800">
+      <animate attributeName="stroke-dashoffset" from="800" to="0" dur="3.2s" fill="freeze"/>
     </path>
   </g>
-  <g fill="#99f6e4">
-    <circle cx="770" cy="196" r="5"><animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="890" cy="150" r="5"><animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="1020" cy="97" r="5"><animate attributeName="r" values="4;7;4" dur="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="1160" cy="55" r="5"><animate attributeName="r" values="4;7;4" dur="3s" repeatCount="indefinite"/></circle>
+  <g fill="#ffffff">
+    <circle cx="735" cy="207" r="5" fill="#22d3ee"><animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="838" cy="158" r="5" fill="#e879f9"><animate attributeName="r" values="4;8;4" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="947" cy="112" r="5" fill="#fbbf24"><animate attributeName="r" values="4;8;4" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1060" cy="72" r="5" fill="#fb7185"><animate attributeName="r" values="4;8;4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1170" cy="39" r="5" fill="#86efac"><animate attributeName="r" values="4;8;4" dur="2.2s" repeatCount="indefinite"/></circle>
   </g>
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="76" y="115" font-size="18" letter-spacing="5" fill="#99f6e4">DATA • INSIGHTS • IMPACT</text>
-    <text x="72" y="170" font-size="48" font-weight="700" fill="#f8fafc">M SREERAM REDDY</text>
-    <text x="76" y="213" font-size="19" letter-spacing="1.3" fill="#dbeafe">DATA ANALYTICS  /  BUSINESS INTELLIGENCE  /  APPLIED ML</text>
+    <text x="72" y="87" font-size="17" letter-spacing="5" fill="#67e8f9">DATA • INSIGHTS • IMPACT</text>
+    <text x="68" y="154" font-size="47" font-weight="800" fill="#ffffff">M SREERAM REDDY</text>
+    <text x="72" y="198" font-size="19" letter-spacing="1.1" fill="#f5d0fe">DATA ANALYTICS  /  BUSINESS INTELLIGENCE</text>
+    <text x="72" y="230" font-size="19" letter-spacing="1.1" fill="#fde68a">PYTHON  /  SQL  /  POWER BI  /  APPLIED ML</text>
   </g>
-  <rect x="76" y="238" width="88" height="4" rx="2" fill="#5eead4">
-    <animate attributeName="width" values="88;180;88" dur="4s" repeatCount="indefinite"/>
-  </rect>
+  <g>
+    <rect x="72" y="258" width="125" height="35" rx="17" fill="#06b6d4" fill-opacity=".20" stroke="#67e8f9" stroke-opacity=".8"/>
+    <text x="134" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#cffafe">ANALYZE</text>
+    <rect x="209" y="258" width="140" height="35" rx="17" fill="#d946ef" fill-opacity=".20" stroke="#f0abfc" stroke-opacity=".8"/>
+    <text x="279" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#fae8ff">VISUALIZE</text>
+    <rect x="361" y="258" width="130" height="35" rx="17" fill="#f97316" fill-opacity=".20" stroke="#fdba74" stroke-opacity=".8"/>
+    <text x="426" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="700" fill="#ffedd5">IMPACT</text>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="585" cy="55" r="2.5" opacity=".9"><animate attributeName="opacity" values=".15;1;.15" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="160" r="2.5" opacity=".8"><animate attributeName="opacity" values="1;.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="660" cy="300" r="3" opacity=".7"><animate attributeName="opacity" values=".2;.9;.2" dur="4s" repeatCount="indefinite"/></circle>
+  </g>
 </svg>
