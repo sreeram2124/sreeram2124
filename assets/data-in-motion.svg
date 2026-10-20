@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Data in Motion — Analytics workflow visualization</title>
+  <desc id="desc">A colorful animated mock data dashboard with glowing bar charts, a moving trend line, a donut chart, floating labels, and a pipeline from raw data to insights.</desc>
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset=".52" stop-color="#1e1b4b"/><stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="bars" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#06b6d4"/><stop offset=".55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="trend" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".55" stop-color="#c084fc"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="500" rx="26" fill="url(#back)"/>
+  <rect width="1200" height="500" rx="26" fill="url(#grid)"/>
+  <circle cx="170" cy="100" r="130" fill="#ec4899" opacity=".08"><animate attributeName="r" values="110;155;110" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="1070" cy="210" r="180" fill="#22d3ee" opacity=".07"><animate attributeName="r" values="160;205;160" dur="9s" repeatCount="indefinite"/></circle>
+
+  <text x="52" y="58" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" fill="#fff">DATA IN MOTION</text>
+  <text x="54" y="83" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2.5" fill="#a5f3fc">FROM RAW SIGNALS TO CLEAR INSIGHTS</text>
+
+  <!-- dashboard card -->
+  <rect x="48" y="108" width="705" height="275" rx="18" fill="#0f172a" fill-opacity=".76" stroke="#64748b" stroke-opacity=".65"/>
+  <text x="76" y="143" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#e2e8f0">PERFORMANCE OVERVIEW</text>
+  <rect x="623" y="124" width="100" height="25" rx="12" fill="#10b981" fill-opacity=".18" stroke="#34d399" stroke-opacity=".75"/>
+  <text x="673" y="141" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#6ee7b7">LIVE VISUALS</text>
+
+  <!-- chart grid -->
+  <g stroke="#94a3b8" stroke-opacity=".2" stroke-dasharray="3 5">
+    <path d="M88 185H716"/><path d="M88 225H716"/><path d="M88 265H716"/><path d="M88 305H716"/><path d="M88 345H716"/>
+  </g>
+  <!-- animated bars -->
+  <g>
+    <rect x="120" y="290" width="34" height="55" rx="5" fill="#22d3ee"><animate attributeName="height" values="55;95;68;55" dur="5s" repeatCount="indefinite"/><animate attributeName="y" values="290;250;277;290" dur="5s" repeatCount="indefinite"/></rect>
+    <rect x="185" y="260" width="34" height="85" rx="5" fill="#818cf8"><animate attributeName="height" values="85;58;112;85" dur="4.5s" repeatCount="indefinite"/><animate attributeName="y" values="260;287;233;260" dur="4.5s" repeatCount="indefinite"/></rect>
+    <rect x="250" y="278" width="34" height="67" rx="5" fill="#c084fc"><animate attributeName="height" values="67;105;77;67" dur="4.8s" repeatCount="indefinite"/><animate attributeName="y" values="278;240;268;278" dur="4.8s" repeatCount="indefinite"/></rect>
+    <rect x="315" y="230" width="34" height="115" rx="5" fill="#f472b6"><animate attributeName="height" values="115;85;130;115" dur="5.2s" repeatCount="indefinite"/><animate attributeName="y" values="230;260;215;230" dur="5.2s" repeatCount="indefinite"/></rect>
+    <rect x="380" y="248" width="34" height="97" rx="5" fill="#fb7185"><animate attributeName="height" values="97;132;78;97" dur="4.7s" repeatCount="indefinite"/><animate attributeName="y" values="248;213;267;248" dur="4.7s" repeatCount="indefinite"/></rect>
+    <rect x="445" y="205" width="34" height="140" rx="5" fill="#fbbf24"><animate attributeName="height" values="140;112;157;140" dur="5.1s" repeatCount="indefinite"/><animate attributeName="y" values="205;233;188;205" dur="5.1s" repeatCount="indefinite"/></rect>
+    <rect x="510" y="230" width="34" height="115" rx="5" fill="#34d399"><animate attributeName="height" values="115;146;91;115" dur="4.4s" repeatCount="indefinite"/><animate attributeName="y" values="230;199;254;230" dur="4.4s" repeatCount="indefinite"/></rect>
+    <rect x="575" y="185" width="34" height="160" rx="5" fill="#38bdf8"><animate attributeName="height" values="160;125;177;160" dur="4.9s" repeatCount="indefinite"/><animate attributeName="y" values="185;220;168;185" dur="4.9s" repeatCount="indefinite"/></rect>
+    <rect x="640" y="207" width="34" height="138" rx="5" fill="#a78bfa"><animate attributeName="height" values="138;168;120;138" dur="5.3s" repeatCount="indefinite"/><animate attributeName="y" values="207;177;225;207" dur="5.3s" repeatCount="indefinite"/></rect>
+  </g>
+  <!-- moving trend line -->
+  <path d="M102 252 L180 236 L260 250 L342 202 L420 220 L500 174 L580 194 L690 158" fill="none" stroke="url(#trend)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" stroke-dasharray="800" stroke-dashoffset="800">
+    <animate attributeName="stroke-dashoffset" from="800" to="0" dur="3.4s" fill="freeze"/>
+  </path>
+  <circle r="6" fill="#ffffff" stroke="#f472b6" stroke-width="4" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M102 252 L180 236 L260 250 L342 202 L420 220 L500 174 L580 194 L690 158"/>
+  </circle>
+
+  <!-- right side donut + labels -->
+  <rect x="781" y="108" width="370" height="275" rx="18" fill="#0f172a" fill-opacity=".72" stroke="#64748b" stroke-opacity=".65"/>
+  <text x="810" y="143" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#e2e8f0">ANALYTICS TOOLBOX</text>
+  <g transform="translate(900 245)">
+    <circle r="65" fill="none" stroke="#334155" stroke-width="18"/>
+    <circle r="65" fill="none" stroke="#22d3ee" stroke-width="18" stroke-dasharray="95 314" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="65" fill="none" stroke="#c084fc" stroke-width="18" stroke-dasharray="75 334" stroke-dashoffset="-103" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="65" fill="none" stroke="#f472b6" stroke-width="18" stroke-dasharray="60 349" stroke-dashoffset="-186" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="65" fill="none" stroke="#fbbf24" stroke-width="18" stroke-dasharray="50 359" stroke-dashoffset="-254" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="4" cx="0" cy="-65" fill="#fff"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">
+    <rect x="1005" y="183" width="112" height="26" rx="13" fill="#22d3ee" fill-opacity=".18" stroke="#22d3ee"/><text x="1061" y="200" text-anchor="middle" fill="#a5f3fc">ANALYZE</text>
+    <rect x="1005" y="222" width="112" height="26" rx="13" fill="#c084fc" fill-opacity=".18" stroke="#c084fc"/><text x="1061" y="239" text-anchor="middle" fill="#e9d5ff">MODEL</text>
+    <rect x="1005" y="261" width="112" height="26" rx="13" fill="#f472b6" fill-opacity=".18" stroke="#f472b6"/><text x="1061" y="278" text-anchor="middle" fill="#fce7f3">VISUALIZE</text>
+    <rect x="1005" y="300" width="112" height="26" rx="13" fill="#fbbf24" fill-opacity=".18" stroke="#fbbf24"/><text x="1061" y="317" text-anchor="middle" fill="#fef3c7">COMMUNICATE</text>
+  </g>
+  <!-- pipeline -->
+  <g font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="13" text-anchor="middle">
+    <rect x="88" y="420" width="205" height="46" rx="14" fill="#06b6d4" fill-opacity=".15" stroke="#22d3ee" stroke-opacity=".8"/>
+    <text x="190" y="448" fill="#a5f3fc">01  RAW DATA</text>
+    <rect x="359" y="420" width="205" height="46" rx="14" fill="#8b5cf6" fill-opacity=".18" stroke="#a78bfa" stroke-opacity=".9"/>
+    <text x="461" y="448" fill="#ddd6fe">02  ANALYZE</text>
+    <rect x="630" y="420" width="205" height="46" rx="14" fill="#ec4899" fill-opacity=".16" stroke="#f472b6" stroke-opacity=".9"/>
+    <text x="732" y="448" fill="#fce7f3">03  VISUALIZE</text>
+    <rect x="901" y="420" width="205" height="46" rx="14" fill="#f97316" fill-opacity=".17" stroke="#fdba74" stroke-opacity=".9"/>
+    <text x="1003" y="448" fill="#ffedd5">04  INSIGHT</text>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".85" stroke-width="2.5" stroke-dasharray="5 8">
+    <path d="M294 443H352"><animate attributeName="stroke-dashoffset" values="0;-26" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M565 443H623"><animate attributeName="stroke-dashoffset" values="0;-26" dur="1.2s" repeatCount="indefinite"/></path>
+    <path d="M836 443H894"><animate attributeName="stroke-dashoffset" values="0;-26" dur="1.2s" repeatCount="indefinite"/></path>
+  </g>
+</svg>
