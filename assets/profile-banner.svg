@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">M Sreeram Reddy — Data Analytics</title>
+  <desc id="desc">A dark navy and teal banner with subtle analytics chart lines and abstract data points.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="58%" stop-color="#102b3b"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#99f6e4" stop-opacity=".9"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#cbd5e1" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="22" fill="url(#grid)"/>
+  <circle cx="1030" cy="95" r="125" fill="#2dd4bf" opacity=".06"/>
+  <circle cx="1070" cy="250" r="150" fill="#38bdf8" opacity=".06"/>
+  <g fill="none" stroke="url(#line)" stroke-width="3">
+    <path d="M700 230 L770 196 L830 211 L890 150 L950 166 L1020 97 L1080 120 L1160 55" opacity=".9"/>
+    <path d="M700 250 L770 235 L830 245 L890 218 L950 226 L1020 192 L1080 206 L1160 170" opacity=".45"/>
+  </g>
+  <g fill="#99f6e4">
+    <circle cx="770" cy="196" r="5"/><circle cx="890" cy="150" r="5"/><circle cx="1020" cy="97" r="5"/><circle cx="1160" cy="55" r="5"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="76" y="115" font-size="18" letter-spacing="5" fill="#99f6e4">DATA • INSIGHTS • IMPACT</text>
+    <text x="72" y="170" font-size="48" font-weight="700" fill="#f8fafc">M SREERAM REDDY</text>
+    <text x="76" y="213" font-size="19" letter-spacing="1.3" fill="#dbeafe">DATA ANALYTICS  /  BUSINESS INTELLIGENCE  /  APPLIED ML</text>
+  </g>
+  <rect x="76" y="238" width="88" height="4" rx="2" fill="#5eead4"/>
+</svg>
